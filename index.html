@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simple Navbar</title>
+</head>
+<body background="homebg.jpg" >
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="My logo"></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="toggle-button">☰</button>
+    </nav>
+    <section class="landing-description">
+        <h1>Welcome to Ds Panda Gaming!</h1>
+        <p>Welcome to the official webpage of Ds Panda – your go-to hub for everything gaming! Dive into the world of intense gameplay, expert tips, and exciting streaming content. Whether you're a casual gamer or a hardcore enthusiast, Ds Panda is here to elevate your gaming experience. Explore, engage, and game on!</p>
+    </section>
+
+    <script>
+        const toggleButton = document.querySelector('.toggle-button');
+        const navbar = document.querySelector('.navbar');
+
+        toggleButton.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

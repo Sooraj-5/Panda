@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>About Us - Ds Panda</title>
+</head>
+<body background="aboutbg.jpeg">
+    
+    <nav class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="My Logo" />
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <button class="toggle-button">☰</button>
+    </nav>
+
+    <div class="about-container">
+        <div class="about-description">
+            <h1>About Us</h1>
+            <p>we are passionate gamers who enjoy exploring different genres and titles. Whether diving into the intense battlegrounds of PUBG, where players scavenge for weapons and outsmart opponents to be the last one standing, scoring thrilling goals in eFootball with its realistic graphics and fluid gameplay, or strategizing in Valorant with its precise gunplay and unique agent abilities, our love for gaming fuels our creativity and teamwork. Gaming, for us, goes beyond mere entertainment; it's a way to connect with others, challenge ourselves, and have fun. We believe in the power of games to bring people together and inspire innovation in everything we do.</p>
+        </div>
+    </div>
+
+    <script>
+        const toggleButton = document.querySelector('.toggle-button');
+        const navbar = document.querySelector('.navbar');
+
+        toggleButton.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
